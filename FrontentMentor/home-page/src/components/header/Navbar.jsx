@@ -1,8 +1,9 @@
+import menuIcon from "../../assets/images/icon-menu.svg";
 
 const Navbar = () => {
     return (
-        <div>
-            <ul className="bg-blue-500 hidden sm:flex text-[1.2rem] sm:w-[27rem] sm:place-content-around sm:text-[1rem]">
+        <>
+            <ul className="hidden text-[1.2rem] sm:flex sm:w-[27rem] sm:place-content-around sm:text-[1rem]">
                 <li>
                     <a href="#"><li>Home</li></a>
                 </li>
@@ -19,7 +20,8 @@ const Navbar = () => {
                     <a href="#"><li>Categories</li></a>
                 </li>
             </ul>
-        </div>
+            <img src={menuIcon} alt="Menú" className="w-8 h-7 cursor-pointer sm:hidden" />
+        </>
     )
 }
 

@@ -3,9 +3,9 @@ import Header from "./components/header/Header";
 const App = () => {
 
   return (
-    <div>
+    <main className="px-5 pt-6">
       <Header />
-    </div>
+    </main>
   )
 }
 

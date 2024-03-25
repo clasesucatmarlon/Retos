@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
     return (
-        <header className="bg-red-500 flex place-content-between sm:items-center">
+        <header className="flex place-content-between items-center">
             <img src={Logo} alt="Logo"/>
             <Navbar />
         </header>
