@@ -1,9 +1,10 @@
+import Header from "./components/header/Header";
 
 const App = () => {
 
   return (
     <div>
-      <p className="bg-red-500 text-2xl">Hello username</p>
+      <Header />
     </div>
   )
 }
