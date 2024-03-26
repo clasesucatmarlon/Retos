@@ -3,8 +3,8 @@ import imageDesktop from "../../assets/images/image-web-3-desktop.jpg";
 
 const MainArticle = () => {
     return (
-        <section>
-            <picture>
+        <section >
+            <picture >
                 <source media="(max-width: 640px)" srcSet={imageMobile} />
                 <source media="(min-width: 641px)" srcSet={imageDesktop} />
                 <img src={imageMobile} alt="Imagen artículo principal" />
