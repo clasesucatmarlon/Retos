@@ -11,7 +11,8 @@ export default {
         "SoftRed": "hsl(5, 85%, 63%)",
         "OffWhite": "hsl(36, 100%, 99%)",
         "GrayishBlue": "hsl(233, 8%, 79%)",
-        "DarkGrayishBlue": "hsl(236, 13%, 42%)"
+        "DarkGrayishBlue": "hsl(236, 13%, 42%)",
+        "VeryDarkBlue": "hsl(240, 100%, 5%)"
       }
     },
   },
