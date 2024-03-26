@@ -18,7 +18,7 @@ const infoArticles = [
 
 const NewContainer = () => {
     return (
-        <aside className="bg-VeryDarkBlue text-OffWhite p-[1.2rem] mt-7 sm:mt-0">
+        <aside className="bg-VeryDarkBlue text-OffWhite p-[1.2rem] mt-7 lg:mt-0">
             <h1 className="text-SoftOrange text-[2rem] font-bold">New</h1>
             {
                 infoArticles.map((article, index) => {

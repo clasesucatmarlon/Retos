@@ -28,7 +28,7 @@ const inforArticles = [
 
 export const ArticlesContainer = () => {
     return (
-        <section className="sm:flex">
+        <section className="lg:flex lg:gap-[3rem] ">
             {
                 inforArticles.map( (item, index) => {
                     return (

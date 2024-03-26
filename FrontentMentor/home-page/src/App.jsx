@@ -6,9 +6,9 @@ import { ArticlesContainer } from "./components/articles/ArticlesContainer";
 const App = () => {
 
   return (
-    <main className="px-5 pt-6">
+    <main className="px-7 lg:px-[3rem] pt-10 lg:pt-[3rem]">
       <Header />
-      <div className="sm:flex sm:gap-7 mb-9">
+      <div className="lg:flex lg:gap-7 mb-9">
         <MainArticle />
         <NewContainer />
       </div>
