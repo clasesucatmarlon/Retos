@@ -1,26 +1,35 @@
-import menuIcon from "../../assets/images/icon-menu.svg";
+import { useState } from "react";
+import Logo from "../../assets/images/logo.svg";
 
 const Navbar = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
     return (
         <>
-            <ul className="hidden text-[1.2rem] sm:flex sm:w-[27rem] sm:place-content-around sm:text-[1rem]">
+            <div className="text-[2.4rem] absolute right-8 top-8 cursor-pointer sm:hidden">
+                <ion-icon name={showMenu ? "close-outline" : "menu-outline"} onClick={() => setShowMenu(!showMenu)}></ion-icon>
+            </div>
+
+            <ul className={`absolute sm:static bg-white pl-7 w-[65%] left-0 h-[70%] sm:h-0 flex flex-col sm:flex-row  text-[1.2rem] sm:flex sm:w-[27rem] sm:place-content-between sm:text-[1rem] transition-all duration-500 ease-in ${showMenu ? 'top-[0%]' : 'top-[-100%]'} justify-around`}>
                 <li>
-                    <a href="#"><li>Home</li></a>
+                    <img src={Logo} alt="Logo" className={showMenu ? "flex w-9 mt-[20%] sm:hidden" : "sm:hidden"} />
                 </li>
                 <li>
-                    <a href="#"><li>New</li></a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#"><li>Popular</li></a>
+                    <a href="#">New</a>
                 </li>
                 <li>
-                    <a href="#"><li>Trending</li></a>
+                    <a href="#">Popular</a>
                 </li>
                 <li>
-                    <a href="#"><li>Categories</li></a>
+                    <a href="#">Trending</a>
+                </li>
+                <li>
+                    <a href="#">Categories</a>
                 </li>
             </ul>
-            <img src={menuIcon} alt="Menú" className="w-8 h-7 cursor-pointer sm:hidden" />
         </>
     )
 }
